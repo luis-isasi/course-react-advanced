@@ -1,0 +1,25 @@
+{
+    "root": true,
+      //por default Eslint entiende JS pero no TS, por eso el porque tenemos que pasarle 
+    //@typescript-eslint/parser en el parser.
+    "parser": "@typescript-eslint/parser",
+    "plugins": [
+      "@typescript-eslint",
+      "eslint-plugin-prettier"
+    ],
+    "extends": [
+      "react-app",
+      "prettier",
+      "prettier/@typescript-eslint",
+      "prettier/react"
+    ],
+    "rules": {
+      "prettier/prettier": [
+        "error",
+        {
+          "singleQuote": true,
+          "endOfLine": "auto" 
+        }
+      ]
+    }
+  }
